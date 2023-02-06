@@ -1,0 +1,5 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^naviesta\.info$
+RewriteRule ^/?$ "https\:\/\/naviesta\.com\/" [R=301,L]
+

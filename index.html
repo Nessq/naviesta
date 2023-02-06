@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naviesta</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700;900&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="icon" href="img/logo__mobile.svg">
+
+    <link rel="stylesheet" href="css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+
+  </head>
+  <body>
+
+    <div class="bg-picture"></div>
+
+    <header class="header container-xl">
+      <div class="header__top">
+        <div class="logo only-pk"><img src="img/logo.svg" alt="" /></div>
+        <div class="logo__mobile only-mobile">
+          <img src="img/logo__mobile.svg" alt="" />
+          <span>NAVIESTA</span>
+        </div>
+        <a href="#subscribe" class="btn only-pk">contacts us</a>
+      </div>
+    </header>
+
+    <main class="main container-xl">
+      <div class="main-text">
+        <h1>
+          BRINGING<br />
+          YOU BREATHTAKING<br />
+          EMOTIONS ON THE WATER
+        </h1>
+        <div class="divider-under-text"></div>
+        <p class="only-pk">sailing <span>•</span> regattas <span>•</span> flotillas <span>•</span> adventures</p>
+        <a href="#subscribe" class="btn only-pk"
+          >Start your journey <img class="icon-arrow-right" src="img/arrow-right.svg" alt=""
+        /></a>
+      </div>
+      <div class="main-image">
+        <picture>
+          <source media="(max-width: 560px)" srcset="img/main-img__mobile.png">
+          <source media="(min-width: 561px)" srcset="img/main-img.png">
+          <img src="img/main-img.png" alt="">
+        </picture>
+        
+      </div>
+
+      <div class="main-arrow main-arrow-mobile">
+        <a href="#subscribe">
+          <img src="img/arrow.svg" alt="" />
+        </a>
+      </div>
+
+      <div class="main-text main-text-mob">
+        <p class="only-mobile">sailing <span>•</span> regattas <span>•</span> flotillas <span>•</span> adventures</p>
+        <a href="#subscribe" class="btn only-mobile"
+          >Start your journey <img class="icon-arrow-right" src="img/arrow-right.svg" alt=""
+        /></a>
+      </div>
+
+      <div class="main-arrow">
+        <a href="#subscribe">
+          <img src="img/arrow.svg" alt="" />
+        </a>
+      </div>
+    </main>
+
+    <section id="subscribe" class="subscribe container-md">
+      <h2>The fleet awaits...</h2>
+      
+
+      <form class="form" id="form">
+
+        <div class="form-group">
+          <h3>Please complete your details below and we'll be in touch soon.</h3>
+          <div class="form-group-grid">
+            <div class="input-group">
+              <input type="text" name="first-name" placeholder="FIRST NAME" value="" />
+            </div>
+            <div class="input-group">
+              <input type="text" name="sur-name" placeholder="SURNAME" value="" />
+            </div>
+            <div class="input-group">
+              <input type="tel" name="phone" id="phone" value="" />
+            </div>
+            <div class="input-group">
+              <input type="email" name="email" value="" placeholder="EMAIL" />
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="form-group">
+          <h3>Contact preference</h3>
+          <div class="input-group input-group-radio">
+            <div class="radio">
+              <input id="radio-phone" type="radio" name="preference" value="phone" checked />
+              <label for="radio-phone" class="radio-label">PHONE</label>
+            </div>
+            <div class="switcher">
+              <span class="switcher-active pos-1"></span>
+            </div>
+            <div class="radio">
+              <input id="radio-email" type="radio" name="preference" value="email" />
+              <label for="radio-email" class="radio-label">EMAIL</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <h3>Events details</h3>
+          <div class="input-group handle-text-area">
+            <div class="pull-tab"></div>
+            <textarea name="message" placeholder="Please provide a brief description of your event: dates, number of participants, country, desirable budget per person, any other details."></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="checkbox">
+            <input type="checkbox" name="subscribe-email" value="yes">
+            <span class="ui-checkbox"></span>
+            <span class="ui-checkbox-text">I would like to receive email updates from Naviesta.</span>
+          </label>
+        </div>
+        <div class="form-group center">
+        <button type="submit" class="btn">Request consultation <img class="icon-arrow-right only-pk" src="img/arrow-right.svg" alt=""
+          /></button>
+      </div>
+      </form>
+    </section>
+
+    
+    <footer class="footer">
+      <p class="center">All rights reserved © 2023 naviesta.com</p>
+    </footer>
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/mask/jquery.mask.min.js"></script>
+    <script src="js/intl/intlTelInput.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

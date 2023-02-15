@@ -12,141 +12,623 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700;900&family=Roboto+Condensed:wght@400;700&display=swap"
       rel="stylesheet" />
 
-    <link rel="icon" href="img/logo__mobile.svg">
+    <link rel="icon" href="img/logo__mobile.svg" />
 
     <link rel="stylesheet" href="css/intlTelInput.min.css" />
-    <link rel="stylesheet" href="css/main.min.css" />
-
+    <link rel="stylesheet" href="css/main.min.css?ver=1.01" />
   </head>
   <body>
+    <div class="site">
+      <div class="bg-picture"></div>
 
-    <div class="bg-picture"></div>
-
-    <header class="header container-xl">
-      <div class="header__top">
-        <div class="logo only-pk"><img src="img/logo.svg" alt="" /></div>
-        <div class="logo__mobile only-mobile">
-          <img src="img/logo__mobile.svg" alt="" />
-          <span>NAVIESTA</span>
+      <header class="header container-xl">
+        <div class="header__top">
+          <div class="logo">
+            <img src="img/logo.svg" alt="" />
+            <span>NAVIESTA</span>
+          </div>
+          <ul class="menu animation-link animation-link--alternate">
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#cases">Cases</a></li>
+            <li><a href="#about">About company</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <a href="#subscribe" class="btn only-pk">contacts us</a>
-      </div>
-    </header>
+      </header>
 
-    <main class="main container-xl">
-      <div class="main-text">
-        <h1>
-          BRINGING<br />
-          YOU BREATHTAKING<br />
-          EMOTIONS ON THE WATER
-        </h1>
-        <div class="divider-under-text"></div>
-        <p class="only-pk">sailing <span>•</span> regattas <span>•</span> flotillas <span>•</span> adventures</p>
-        <a href="#subscribe" class="btn only-pk"
-          >Start your journey <img class="icon-arrow-right" src="img/arrow-right.svg" alt=""
-        /></a>
-      </div>
-      <div class="main-image">
-        <picture>
-          <source media="(max-width: 560px)" srcset="img/main-img__mobile.png">
-          <source media="(min-width: 561px)" srcset="img/main-img.png">
-          <img src="img/main-img.png" alt="">
-        </picture>
-        
-      </div>
+      <main class="main container-xl">
+        <div class="main-text">
+          <h1>
+            BRINGING<br />
+            YOU BREATHTAKING<br />
+            EMOTIONS ON THE WATER
+          </h1>
+          <div class="divider-under-text"></div>
+          <p class="only-pk">
+            sailing <span>•</span> regattas <span>•</span> flotillas <span>•</span> adventures
+          </p>
+          <a href="#subscribe" class="btn only-pk"
+            >Start your journey <img class="icon-arrow-right" src="img/arrow-right.svg" alt=""
+          /></a>
+        </div>
+        <div class="main-image">
+          <picture>
+            <source media="(max-width: 560px)" srcset="img/main-img__mobile.png" />
+            <source media="(min-width: 561px)" srcset="img/main-img.png" />
+            <img src="img/main-img.png" alt="" />
+          </picture>
+        </div>
 
-      <div class="main-arrow main-arrow-mobile">
-        <a href="#subscribe">
-          <img src="img/arrow.svg" alt="" />
-        </a>
-      </div>
+        <div class="main-arrow main-arrow-mobile">
+          <a href="#benefits">
+            <img src="img/arrow.svg" alt="" />
+          </a>
+        </div>
 
-      <div class="main-text main-text-mob">
-        <p class="only-mobile">sailing <span>•</span> regattas <span>•</span> flotillas <span>•</span> adventures</p>
-        <a href="#subscribe" class="btn only-mobile"
-          >Start your journey <img class="icon-arrow-right" src="img/arrow-right.svg" alt=""
-        /></a>
-      </div>
+        <div class="main-text main-text-mob">
+          <p class="only-mobile">
+            sailing <span>•</span> regattas <span>•</span> flotillas <span>•</span> adventures
+          </p>
+          <a href="#subscribe" class="btn only-mobile"
+            >Start your journey <img class="icon-arrow-right" src="img/arrow-right.svg" alt=""
+          /></a>
+        </div>
 
-      <div class="main-arrow">
-        <a href="#subscribe">
-          <img src="img/arrow.svg" alt="" />
-        </a>
-      </div>
-    </main>
+        <div class="main-arrow only-pk">
+          <a href="#benefits">
+            <img src="img/arrow.svg" alt="" />
+          </a>
+        </div>
+      </main>
 
-    <section id="subscribe" class="subscribe container-md">
-      <h2>The fleet awaits...</h2>
-      
+      <section class="benefits" id="benefits">
+        <div class="benefits-bg">
+          <div class="benefits-bg__1" style="background-image: url('img/step/bg-1.png')"></div>
+          <div class="benefits-bg__2" style="background-image: url('img/step/bg-2.png')"></div>
+          <div class="benefits-bg__3" style="background-image: url('img/step/palm.png')"></div>
+        </div>
 
-      <form class="form" id="form">
+        <div class="benefits-bg-stars">
+          <img src="img/step/1.svg" alt="" class="benefits-bg-stars__1" />
+          <img src="img/step/2.svg" alt="" class="benefits-bg-stars__2" />
+          <img src="img/step/3.svg" alt="" class="benefits-bg-stars__3" />
+          <img src="img/step/4.svg" alt="" class="benefits-bg-stars__4" />
+          <img src="img/step/5.svg" alt="" class="benefits-bg-stars__5" />
+        </div>
 
-        <div class="form-group">
-          <h3>Please complete your details below and we'll be in touch soon.</h3>
-          <div class="form-group-grid">
-            <div class="input-group">
-              <input type="text" name="first-name" placeholder="FIRST NAME" value="" />
+        <div class="benefits-items">
+          <div class="benefits-item">
+            <div class="benefits-item__image">
+              <img src="img/step/item1.svg" alt="" />
             </div>
-            <div class="input-group">
-              <input type="text" name="sur-name" placeholder="SURNAME" value="" />
-            </div>
-            <div class="input-group">
-              <input type="tel" name="phone" id="phone" value="" />
-            </div>
-            <div class="input-group">
-              <input type="email" name="email" value="" placeholder="EMAIL" />
+            <div class="benefits-item__desc">
+              <h3 class="benefits-item__title">Lorem ipsum dolor sit</h3>
+              <p class="benefits-item__text">
+                Lorem ipsum dolor sit amet consectetur. Hac egestas sagittis neque accumsan
+                vulputate nisi nunc. Semper semper ullamcorper egestas sed gravida
+              </p>
             </div>
           </div>
-         
-        </div>
 
-        <div class="form-group">
-          <h3>Contact preference</h3>
-          <div class="input-group input-group-radio">
-            <div class="radio">
-              <input id="radio-phone" type="radio" name="preference" value="phone" checked />
-              <label for="radio-phone" class="radio-label">PHONE</label>
+          <div class="benefits-item">
+            <div class="benefits-item__image">
+              <img src="img/step/item2.svg" alt="" />
             </div>
-            <div class="switcher">
-              <span class="switcher-active pos-1"></span>
+            <div class="benefits-item__desc">
+              <h3 class="benefits-item__title">Lorem ipsum dolor sit</h3>
+              <p class="benefits-item__text">
+                Lorem ipsum dolor sit amet consectetur. Hac egestas sagittis neque accumsan
+                vulputate nisi nunc. Semper semper ullamcorper egestas sed gravida
+              </p>
             </div>
-            <div class="radio">
-              <input id="radio-email" type="radio" name="preference" value="email" />
-              <label for="radio-email" class="radio-label">EMAIL</label>
+          </div>
+
+          <div class="benefits-item">
+            <div class="benefits-item__image">
+              <img src="img/step/item3.svg" alt="" />
+            </div>
+            <div class="benefits-item__desc">
+              <h3 class="benefits-item__title">Lorem ipsum dolor sit</h3>
+              <p class="benefits-item__text">
+                Lorem ipsum dolor sit amet consectetur. Hac egestas sagittis neque accumsan
+                vulputate nisi nunc. Semper semper ullamcorper egestas sed gravida
+              </p>
+            </div>
+          </div>
+
+          <div class="benefits-item">
+            <div class="benefits-item__image">
+              <img src="img/step/item4.svg" alt="" />
+            </div>
+            <div class="benefits-item__desc">
+              <h3 class="benefits-item__title">Lorem ipsum dolor sit</h3>
+              <p class="benefits-item__text">
+                Lorem ipsum dolor sit amet consectetur. Hac egestas sagittis neque accumsan
+                vulputate nisi nunc. Semper semper ullamcorper egestas sed gravida
+              </p>
+            </div>
+          </div>
+
+          <div class="benefits-item">
+            <div class="benefits-item__image">
+              <img src="img/step/item5.svg" alt="" />
+            </div>
+            <div class="benefits-item__desc">
+              <h3 class="benefits-item__title">Lorem ipsum dolor sit</h3>
+              <p class="benefits-item__text">
+                Lorem ipsum dolor sit amet consectetur. Hac egestas sagittis neque accumsan
+                vulputate nisi nunc. Semper semper ullamcorper egestas sed gravida
+              </p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="form-group">
-          <h3>Events details</h3>
-          <div class="input-group handle-text-area">
-            <div class="pull-tab"></div>
-            <textarea name="message" placeholder="Please provide a brief description of your event: dates, number of participants, country, desirable budget per person, any other details."></textarea>
+      <section class="services" id="services">
+        <div class="services-stars">
+          <img src="img/services/1.svg" alt="" class="services-stars__1" />
+        </div>
+        <div class="services-container">
+          <h4 class="subtitle-section">Events details</h4>
+          <h2 class="title-section">Our services</h2>
+          <div class="services-line">
+            <p class="description-section">
+              Hac egestas sagittis neque accumsan vulputate nisi nunc.
+            </p>
+            <div class="close-item-active">
+              <img src="img/arrow-left.svg" alt="" />
+              <span>back</span>
+            </div>
+          </div>
+
+          <div class="cont s--inactive">
+            <div class="cont__inner">
+              <!-- el start -->
+              <div class="el">
+                <div class="el__overflow">
+                  <div class="el__inner">
+                    <div class="el__bg" style="--url: url('../img/services/item1.jpg')"></div>
+                    <div class="el__preview-cont">
+                      <h2 class="el__heading">corporate regattas</h2>
+                    </div>
+                    <div class="el__content">
+                      <div class="el__text">
+                        <div class="el__text-wrap">
+                          <h2>corporate regattas</h2>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur. Ut morbi tortor vitae vel quis
+                            neque. Sapien senectus convallis in sit tellus nunc nunc sit mauris.
+                            Risus pellentesque pretium vitae est et tristique. Non molestie cursus
+                            aenean tempor. Cursus eget pellentesque venenatis eu id est massa
+                            tincidunt pretium.
+                          </p>
+                          <a href="#" class="btn"
+                            >Start your journey
+                            <img class="icon-arrow-right" src="img/arrow-right.svg" alt=""
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="el__close-btn"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="el__index">
+                  <div class="el__index-back">1</div>
+                  <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="1">1</div>
+                  </div>
+                </div>
+              </div>
+              <!-- el end -->
+              <!-- el start -->
+              <div class="el">
+                <div class="el__overflow">
+                  <div class="el__inner">
+                    <div class="el__bg" style="--url: url('../img/services/item1.jpg')"></div>
+                    <div class="el__preview-cont">
+                      <h2 class="el__heading">Section 2</h2>
+                    </div>
+                    <div class="el__content">
+                      <div class="el__text">Whatever</div>
+                      <div class="el__close-btn"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="el__index">
+                  <div class="el__index-back">2</div>
+                  <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="2">2</div>
+                  </div>
+                </div>
+              </div>
+              <!-- el end -->
+              <!-- el start -->
+              <div class="el">
+                <div class="el__overflow">
+                  <div class="el__inner">
+                    <div class="el__bg" style="--url: url('../img/services/item1.jpg')"></div>
+                    <div class="el__preview-cont">
+                      <h2 class="el__heading">Section 3</h2>
+                    </div>
+                    <div class="el__content">
+                      <div class="el__text">Whatever</div>
+                      <div class="el__close-btn"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="el__index">
+                  <div class="el__index-back">3</div>
+                  <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="3">3</div>
+                  </div>
+                </div>
+              </div>
+              <!-- el end -->
+              <!-- el start -->
+              <div class="el">
+                <div class="el__overflow">
+                  <div class="el__inner">
+                    <div class="el__bg" style="--url: url('../img/services/item1.jpg')"></div>
+                    <div class="el__preview-cont">
+                      <h2 class="el__heading">Section 4</h2>
+                    </div>
+                    <div class="el__content">
+                      <div class="el__text">Whatever</div>
+                      <div class="el__close-btn"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="el__index">
+                  <div class="el__index-back">4</div>
+                  <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="4">4</div>
+                  </div>
+                </div>
+              </div>
+              <!-- el end -->
+              <!-- el start -->
+              <div class="el">
+                <div class="el__overflow">
+                  <div class="el__inner">
+                    <div class="el__bg" style="--url: url('../img/services/item1.jpg')"></div>
+                    <div class="el__preview-cont">
+                      <h2 class="el__heading">Section 5</h2>
+                    </div>
+                    <div class="el__content">
+                      <div class="el__text">Whatever</div>
+                      <div class="el__close-btn"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="el__index">
+                  <div class="el__index-back">5</div>
+                  <div class="el__index-front">
+                    <div class="el__index-overlay" data-index="5">5</div>
+                  </div>
+                </div>
+              </div>
+              <!-- el end -->
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="form-group">
-          <label class="checkbox">
-            <input type="checkbox" name="subscribe-email" value="yes">
-            <span class="ui-checkbox"></span>
-            <span class="ui-checkbox-text">I would like to receive email updates from Naviesta.</span>
-          </label>
+      <section class="cases" id="cases">
+        <div class="cases-bg">
+          <div class="cases-bg__1" style="background-image: url('img/step/bg-1.png')"></div>
+          <div class="cases-bg__2" style="background-image: url('img/step/bg-2.png')"></div>
         </div>
-        <div class="form-group center">
-        <button type="submit" class="btn">Request consultation <img class="icon-arrow-right only-pk" src="img/arrow-right.svg" alt=""
-          /></button>
+        <div class="cases-stars">
+          <img src="img/cases/1.svg" alt="" class="cases-stars__1" />
+        </div>
+        <div class="cases-container">
+          <h4 class="subtitle-section">Сases and locations</h4>
+
+          <div class="cases-desc">
+            <h2 class="title-section">cases of our company</h2>
+            <p class="description-section">
+              Lorem ipsum dolor sit amet consectetur. Odio diam odio a posuere arcu neque amet nisi
+              enim. Nunc ut arcu habitant elementum cum massa tempor sed neque.
+            </p>
+          </div>
+
+          <div class="cases-earth">
+            <div class="cases-earth-img">
+              <img src="img/cases/earth-shadow.svg" alt="" class="cases-earth-img__shadow" />
+              <img src="img/cases/earth.png" alt="" class="cases-earth-img__image" />
+            </div>
+            <div class="cases-earth-dots">
+              <div class="cases-earth-dots__item cases-earth-dots__spain">
+                <span>Spain</span>
+                <img src="img/cases/dot.svg" alt="" />
+              </div>
+
+              <div class="cases-earth-dots__item cases-earth-dots__italy">
+                <span>Italy</span>
+                <img src="img/cases/dot.svg" alt="" />
+              </div>
+
+              <div class="cases-earth-dots__item cases-earth-dots__croatia">
+                <span>Croatia</span>
+                <img src="img/cases/dot.svg" alt="" />
+              </div>
+            </div>
+            <div class="cases-earth-modals"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-stars">
+          <img src="img/about/1.svg" alt="" class="about-stars__1" />
+        </div>
+        <div class="about-container">
+          <div class="about-text">
+            <h4 class="subtitle-section">About company</h4>
+            <h2 class="title-section">60 years of experience for three</h2>
+          </div>
+        </div>
+        <div class="about-items">
+          <div class="about-item" data-popup-index="1">
+            <div class="about-item__preview">
+              <div class="about-item__image">
+                <img src="img/about/item1.jpg" alt="" />
+              </div>
+              <div class="about-item__read open-popup">
+                to read <img src="img/arrow-right.svg" alt="" />
+              </div>
+            </div>
+            <div class="about-item-content-for-popup" style="display: none">
+              <span class="img">img/about/pop.jpg</span>
+              <span class="pos">chief director</span>
+              <span class="name">david lars</span>
+              <span class="desc">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. At odio felis sem mattis erat orci. Et
+                  dolor orci tristique fermentum libero in ultricies. Lacus turpis vitae nec non.
+                  Rutrum pretium id suspendisse nunc.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. At odio felis sem mattis erat orci. Et
+                  dolor orci tristique fermentum libero in ultricies. Lacus turpis vitae nec non.
+                  Rutrum pretium id suspendisse nunc.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. At odio felis sem mattis erat orci. Et
+                  dolor orci tristique fermentum libero in ultricies. Lacus turpis vitae nec non.
+                  Rutrum pretium id suspendisse nunc.
+                </p>
+              </span>
+            </div>
+          </div>
+
+          <div class="about-item" data-popup-index="2">
+            <div class="about-item__preview">
+              <div class="about-item__image">
+                <img src="img/about/item2.jpg" alt="" />
+              </div>
+              <div class="about-item__read open-popup">
+                to read <img src="img/arrow-right.svg" alt="" />
+              </div>
+            </div>
+            <div class="about-item-content-for-popup" style="display: none">
+              <span class="img">img/about/item2.jpg</span>
+              <span class="pos">chief director2</span>
+              <span class="name">david lars2</span>
+              <span class="desc">
+                Lorem ipsum dolor sit amet consectetur. At odio felis sem mattis erat orci. Et dolor
+                orci tristique fermentum libero in ultricies. Lacus turpis vitae nec non. Rutrum
+                pretium id suspendisse nunc. Arcu lectus nulla et mauris volutpat scelerisque
+                nullam. Sapien ullamcorper quisque id accumsan feugiat tincidunt commodo dictumst.
+                Nisi id cras in eget arcu non amet vitae suspendisse. Feugiat est orci a ipsum nam
+                arcu. Sodales pharetra aenean tortor mattis neque. Nec porta at consectetur elit
+                malesuada amet eu ut. Auctor imperdiet diam et commodo orci enim adipiscing sagittis
+                arcu.
+              </span>
+            </div>
+          </div>
+
+          <div class="about-item" data-popup-index="3">
+            <div class="about-item__preview">
+              <div class="about-item__image">
+                <img src="img/about/item3.jpg" alt="" />
+              </div>
+              <div class="about-item__read open-popup">
+                to read <img src="img/arrow-right.svg" alt="" />
+              </div>
+            </div>
+            <div class="about-item-content-for-popup" style="display: none">
+              <span class="img">img/about/item3.jpg</span>
+              <span class="pos">chief director2</span>
+              <span class="name">david lars2</span>
+              <span class="desc">
+                Lorem ipsum dolor sit amet consectetur. At odio felis sem mattis erat orci. Et dolor
+                orci tristique fermentum libero in ultricies. Lacus turpis vitae nec non. Rutrum
+                pretium id suspendisse nunc. Arcu lectus nulla et mauris volutpat scelerisque
+                nullam. Sapien ullamcorper quisque id accumsan feugiat tincidunt commodo dictumst.
+                Nisi id cras in eget arcu non amet vitae suspendisse. Feugiat est orci a ipsum nam
+                arcu. Sodales pharetra aenean tortor mattis neque. Nec porta at consectetur elit
+                malesuada amet eu ut. Auctor imperdiet diam et commodo orci enim adipiscing sagittis
+                arcu.
+              </span>
+            </div>
+          </div>
+
+          <div class="about-item" data-popup-index="4">
+            <div class="about-item__preview">
+              <div class="about-item__image">
+                <img src="img/about/item4.jpg" alt="" />
+              </div>
+              <div class="about-item__read open-popup">
+                to read <img src="img/arrow-right.svg" alt="" />
+              </div>
+            </div>
+            <div class="about-item-content-for-popup" style="display: none">
+              <span class="img">img/about/item4.jpg</span>
+              <span class="pos">chief director</span>
+              <span class="name">david lars2</span>
+              <span class="desc">
+                Lorem ipsum dolor sit amet consectetur. At odio felis sem mattis erat orci. Et dolor
+                orci tristique fermentum libero in ultricies. Lacus turpis vitae nec non. Rutrum
+                pretium id suspendisse nunc. Arcu lectus nulla et mauris volutpat scelerisque
+                nullam. Sapien ullamcorper quisque id accumsan feugiat tincidunt commodo dictumst.
+                Nisi id cras in eget arcu non amet vitae suspendisse. Feugiat est orci a ipsum nam
+                arcu. Sodales pharetra aenean tortor mattis neque. Nec porta at consectetur elit
+                malesuada amet eu ut. Auctor imperdiet diam et commodo orci enim adipiscing sagittis
+                arcu.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="subscribe" class="subscribe">
+        <div class="subscribe-bg">
+          <div class="subscribe-bg__1" style="background-image: url('img/step/bg-1.png')"></div>
+          <div class="subscribe-bg__2" style="background-image: url('img/step/bg-2.png')"></div>
+        </div>
+        <div class="subscribe-stars">
+          <img src="img/forms-stars1.svg" alt="" class="subscribe-stars__1" />
+          <img src="img/forms-stars2.svg" alt="" class="subscribe-stars__2" />
+        </div>
+        <div class="subscribe-container container-md">
+          <h2>The fleet awaits...</h2>
+
+          <form class="form" id="form">
+            <div class="form-group">
+              <h3>Please complete your details below and we'll be in touch soon.</h3>
+              <div class="form-group-grid">
+                <div class="input-group">
+                  <input type="text" name="first-name" placeholder="FIRST NAME" value="" />
+                </div>
+                <div class="input-group">
+                  <input type="text" name="sur-name" placeholder="SURNAME" value="" />
+                </div>
+                <div class="input-group">
+                  <input type="tel" name="phone" id="phone" value="" />
+                </div>
+                <div class="input-group">
+                  <input type="email" name="email" value="" placeholder="EMAIL" />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <h3>Contact preference</h3>
+              <div class="input-group input-group-radio">
+                <div class="radio">
+                  <input id="radio-phone" type="radio" name="preference" value="phone" checked />
+                  <label for="radio-phone" class="radio-label">PHONE</label>
+                </div>
+                <div class="switcher">
+                  <span class="switcher-active pos-1"></span>
+                </div>
+                <div class="radio">
+                  <input id="radio-email" type="radio" name="preference" value="email" />
+                  <label for="radio-email" class="radio-label">EMAIL</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <h3>Events details</h3>
+              <div class="input-group handle-text-area">
+                <div class="pull-tab"></div>
+                <textarea
+                  name="message"
+                  placeholder="Please provide a brief description of your event: dates, number of participants, country, desirable budget per person, any other details."></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="checkbox">
+                <input type="checkbox" name="subscribe-email" value="yes" />
+                <span class="ui-checkbox"></span>
+                <span class="ui-checkbox-text"
+                  >I would like to receive email updates from Naviesta.</span
+                >
+              </label>
+            </div>
+            <div class="form-group center">
+              <button type="submit" class="btn">
+                Request consultation
+                <img class="icon-arrow-right only-pk" src="img/arrow-right.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="img/footer-logo.svg" alt="" />
+            </div>
+            <ul class="footer-menu animation-link">
+              <li><a href="#">FEATURES</a></li>
+              <li><a href="#">SERVICES</a></li>
+              <li><a href="#">PORTFOLIO</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+          <div class="footer-middle">
+            <p>
+              NAVIESTA d.o.o. turistička agencija<br />
+              OIB: 36388144104
+            </p>
+            <p>
+              Ivana Raosa 8<br />
+              23210, Biograd na Moru, Croatia
+            </p>
+            <p>
+              <img src="img/mail.svg" alt="">
+              <a href="mailto:info@naviesta.com">info@naviesta.com</a>
+            </p>
+          </div>
+          <div class="footer-socials">
+            <a href="#" class="footer-socials__item"><img src="img/socials/fb.svg" alt=""></a>
+            <a href="#" class="footer-socials__item"><img src="img/socials/wa.svg" alt=""></a>
+            <a href="#" class="footer-socials__item"><img src="img/socials/inst.svg" alt=""></a>
+            <a href="#" class="footer-socials__item"><img src="img/socials/tg.svg" alt=""></a>
+          </div>
+          <p class="copy">© 2023 naviesta.com</p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="popup__bg">
+      <div class="popup-bg">
+        <div class="popup-bg__1" style="background-image: url('img/step/bg-1.png')"></div>
+        <div class="popup-bg__2" style="background-image: url('img/step/bg-2.png')"></div>
       </div>
-      </form>
-    </section>
-
-    
-    <footer class="footer">
-      <p class="center">All rights reserved © 2023 naviesta.com</p>
-    </footer>
+      <div class="popup-bg-stars">
+        <img src="img/about/2.svg" alt="" class="popup-bg-stars__1" />
+      </div>
+      <div class="popup">
+        <div class="popup-content">
+          <div class="popup-content__image">
+            <img src="img/about/pop.jpg" alt="" />
+          </div>
+          <div class="popup-content__wrap">
+            <div class="popup-content__position">chief director</div>
+            <div class="popup-content__name">david lars</div>
+            <div class="popup-content__desc"></div>
+            <div class="popup-content__actions">
+              <span class="close-popup"><img src="img/arrow-left.svg" alt="" /> back</span>
+              <span class="next-popup">Next history <img src="img/arrow-right.svg" alt="" /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="js/jquery-3.6.3.min.js"></script>
     <script src="js/mask/jquery.mask.min.js"></script>
     <script src="js/intl/intlTelInput.min.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>

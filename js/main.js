@@ -7,10 +7,14 @@ $(document).ready(function () {
     window.iti = window.intlTelInput(input, {
       formatOnDisplay: true,
       geoIpLookup: function (success, failure) {
-        $.get('https://ipinfo.io', function () {}, 'jsonp').always(function (resp) {
-          var countryCode = resp && resp.country ? resp.country : 'us';
-          success(countryCode);
-        });
+        try {
+          $.get('https://ipinfo.io', function () {}, 'jsonp').always(function (resp) {
+            var countryCode = resp && resp.country ? resp.country : 'us';
+            success(countryCode);
+          });
+        } catch (er) {
+          console.log(er);
+        }
       },
       hiddenInput: 'full_number',
       initialCountry: 'auto',
@@ -116,18 +120,140 @@ $(document).ready(function () {
       type: 'POST',
       url: 'send.php',
       data: data,
-      beforeSend: function() {
+      beforeSend: function () {
         $btn.addClass('sending');
       },
       success: function (res) {
-
         $('#form')[0].reset();
-        $btn.parent().append('<div class="thanks-mess">Thank you, your request has been sent!</div>')
-
+        $btn
+          .parent()
+          .append('<div class="thanks-mess">Thank you, your request has been sent!</div>');
       },
-      complete: function() {
+      complete: function () {
         $btn.removeClass('sending');
       },
     });
   }
+
+  var $cont = document.querySelector('.cont');
+  var $elsArr = [].slice.call(document.querySelectorAll('.el'));
+  var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+  var tempOffset = 0;
+  var $cai = $('.close-item-active');
+
+  $cai.on('click', function () {
+    $('.el.s--active .el__close-btn').click();
+  });
+  setTimeout(function () {
+    $cont.classList.remove('s--inactive');
+  }, 200);
+
+  $elsArr.forEach(function ($el) {
+    $el.addEventListener('click', function () {
+      if (this.classList.contains('s--active')) return;
+      $cont.classList.add('s--el-active');
+      this.classList.add('s--active');
+      tempOffset = $cont.scrollLeft;
+      $($cont).stop(true, true).delay(500).animate({ scrollLeft: 0 }, 500);
+      $cai.addClass('active');
+    });
+  });
+
+  $closeBtnsArr.forEach(function ($btn) {
+    $btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      $cont.classList.remove('s--el-active');
+      document.querySelector('.el.s--active').classList.remove('s--active');
+      $cai.removeClass('active');
+      $($cont).stop(true, true).delay(1500).animate({ scrollLeft: tempOffset }, 500);
+    });
+  });
+
+  let popupBg = document.querySelector('.popup__bg');
+  let popup = document.querySelector('.popup');
+  let openPopupButtons = document.querySelectorAll('.open-popup');
+  let closePopupButton = document.querySelector('.close-popup');
+  let nextPopup = document.querySelector('.next-popup');
+  let currentPopup = null;
+
+  function renderItemPopup(id, loader = false) {
+    const containerContent = document.querySelector('[data-popup-index="' + id + '"]');
+    currentPopup = +id;
+    const content = {
+      img: containerContent.querySelector('.img').innerText,
+      pos: containerContent.querySelector('.pos').innerText,
+      name: containerContent.querySelector('.name').innerText,
+      desc: containerContent.querySelector('.desc').innerHTML,
+    };
+    
+    let popContent = popup.querySelector('.popup-content');
+    let popImg = popup.querySelector('.popup-content__image img');
+    let popPos = popup.querySelector('.popup-content__position');
+    let popName = popup.querySelector('.popup-content__name');
+    let popDesc = popup.querySelector('.popup-content__desc');
+
+    
+    if (loader) {
+      popContent.classList.add('loading');
+      setTimeout(() => {
+        popContent.classList.remove('loading');
+        popContent.classList.add('preloading');
+      }, 250);
+      setTimeout(() => {
+        popImg.setAttribute('src', content.img);
+        popPos.innerText = content.pos;
+        popName.innerText = content.name;
+        popDesc.innerHTML = content.desc;
+        popContent.classList.remove('preloading');
+        let nextContainer = document.querySelector('[data-popup-index="' + (+id + 1) + '"]');
+        if (nextContainer === null) {
+          nextPopup.style.display = 'none';
+        } else {
+          nextPopup.style.display = 'flex';
+        }
+      }, 500);
+    } else {
+      popImg.setAttribute('src', content.img);
+      popPos.innerText = content.pos;
+      popName.innerText = content.name;
+      popDesc.innerHTML = content.desc;
+      let nextContainer = document.querySelector('[data-popup-index="' + (+id + 1) + '"]');
+      if (nextContainer === null) {
+        nextPopup.style.display = 'none';
+      } else {
+        nextPopup.style.display = 'flex';
+      }
+    }
+
+  }
+
+  openPopupButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.body.classList.add('popup-opened');
+      popupBg.classList.add('active');
+      popup.classList.add('active');
+      let id = button.closest('.about-item').getAttribute('data-popup-index');
+      renderItemPopup(id);
+    });
+  });
+
+  nextPopup.addEventListener('click', () => {
+    renderItemPopup(currentPopup + 1, true);
+  });
+  closePopupButton.addEventListener('click', () => {
+    popupBg.classList.remove('active');
+    popup.classList.remove('active');
+    document.body.classList.remove('popup-opened');
+    currentPopup = null;
+  });
+
+  document.addEventListener('click', (e) => {
+    if (e.target === popupBg) {
+      document.body.classList.remove('popup-opened');
+      popupBg.classList.remove('active');
+      popup.classList.remove('active');
+      currentPopup = null;
+    }
+  });
 });

@@ -1,11 +1,13 @@
 $font: 'Montserrat', sans-serif;
 $font-size: 16px;
 
-$radius: 5px;
+$radius: 0.3125rem;
 $btn-bg-color-RGB: rgb(17, 46, 81); /* 0.77 opacity*/
 $inputs-bg: #0c2646;
 $inputs-bg-focus: #163c6b;
 $inputs-bg-RGB: 12, 38, 70;
+
+$bg-popup: #0B2343;
 
 $accent: #1cdbd3;
 $accent-RGB: 28, 219, 211;
@@ -13,9 +15,9 @@ $light: #97acc8;
 $white: #ffffff;
 
 
-$container-gap: 20px;
+$container-gap: 1.25rem;
 
-$container-width-md: 960px;
+$container-width-md: 60rem;
 $container-padding: 0 $container-gap;
 
 $divider-color-30: rgba($white, 0.3);

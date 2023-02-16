@@ -1,4 +1,7 @@
-.benefits-bg, .cases-bg, .popup-bg, .subscribe-bg {
+.benefits-bg,
+.cases-bg,
+.popup-bg,
+.subscribe-bg {
   position: absolute;
   top: 0;
   right: 0;
@@ -26,30 +29,30 @@
     background-position: 100% 105%;
   }
 
-  .popup-bg__1{
+  .popup-bg__1 {
     background-size: 44.9375rem;
     background-position: 0 90%;
   }
 
-  .popup-bg__2{
+  .popup-bg__2 {
     background-size: 29.375rem;
     background-position: 100% 50%;
   }
-  .subscribe-bg__1{
+  .subscribe-bg__1 {
     background-position: 0 92%;
   }
-  .subscribe-bg__2{
+  .subscribe-bg__2 {
     background-position: 100% 70%;
   }
 }
 
-.subscribe-bg{
+.subscribe-bg {
   bottom: -10rem;
 }
 
-.benefits-bg-stars, 
-.services-stars, 
-.cases-stars, 
+.benefits-bg-stars,
+.services-stars,
+.cases-stars,
 .popup-bg-stars,
 .about-stars,
 .subscribe-stars {
@@ -92,34 +95,33 @@
 
 // services-stars
 
-.services-stars__1{
+.services-stars__1 {
   width: 36.75rem;
   height: 42.5625rem;
   left: 0;
   top: 12%;
 }
 
-
 // cases
-.cases-stars__1{
+.cases-stars__1 {
   width: 83.125rem;
   height: 51.5625rem;
   left: 6%;
   top: 11%;
 }
-.cases-bg__1{
+.cases-bg__1 {
   background-size: 44.9375rem;
   background-position: 0 0;
   top: -27rem !important;
 }
 
-.cases-bg__2{
+.cases-bg__2 {
   background-size: 29.375rem;
   background-position: 100% 30%;
 }
 
-.popup-bg-stars__1{
-  width: 22.125rem; 
+.popup-bg-stars__1 {
+  width: 22.125rem;
   height: 22.25rem;
   right: 0;
   top: 0;
@@ -127,25 +129,315 @@
 
 // about-stars
 
-.about-stars__1{
+.about-stars__1 {
   width: 59.875rem;
   height: 45.1875rem;
   top: 17%;
   left: 33%;
 }
 
-
 // subs
 
-.subscribe-stars__1{
+.subscribe-stars__1 {
   top: -3%;
   left: 0;
   width: 22.75rem;
   height: 48.625rem;
 }
-.subscribe-stars__2{
+.subscribe-stars__2 {
   right: 0;
   top: 34%;
   width: 22.625rem;
   height: 48.5625rem;
+}
+
+// ===============================
+.bgs {
+  &--menu {
+    display: none;
+    overflow: initial !important;
+  }
+
+  position: absolute !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+
+  &__sky {
+    @media (max-width: 767px) {
+      display: none !important;
+    }
+    img {
+      position: absolute;
+    }
+    .sky-1 {
+      width: 49.1875rem;
+      height: 29.3125rem;
+      top: 0;
+      left: 0;
+    }
+    .sky-2 {
+      width: 44.9375rem;
+      height: 87.75rem;
+      top: 46rem;
+      left: 0;
+    }
+    .sky-3 {
+      width: 29.375rem;
+      height: 59.125rem;
+      right: 0;
+      top: 75.5rem;
+    }
+    .sky-4 {
+      width: 13.75rem;
+      height: 41.0625rem;
+      top: 142rem;
+      right: 0;
+    }
+    .sky-5 {
+      width: 44.625rem;
+      height: 87.75rem;
+      left: 0;
+      top: 216rem;
+    }
+    .sky-6 {
+      width: 29.0625rem;
+      height: 59.125rem;
+      top: 242.3rem;
+      right: 0;
+    }
+    .sky-7 {
+      top: 352rem;
+      left: 0;
+      width: 45.1875rem;
+      height: 87.75rem;
+    }
+    .sky-8 {
+      width: 28.5rem;
+      height: 59.125rem;
+      top: 375.2rem;
+      right: 0;
+    }
+    .sky-popup-1 {
+      width: 44.9375rem;
+      height: 60rem;
+      left: 0;
+      top: 0;
+    }
+    .sky-popup-2 {
+      width: 32.5625rem;
+      height: 58.1875rem;
+      right: 0;
+      top: 2.5rem;
+    }
+  }
+
+  &__stars {
+    @media (max-width: 767px) {
+      display: none !important;
+    }
+    mix-blend-mode: color-dodge;
+    img {
+      position: absolute;
+    }
+    .star-1 {
+      width: 18.125rem;
+      height: 21.9375rem;
+      right: 0;
+      top: 44.2rem;
+    }
+    .star-2 {
+      width: 29.5625rem;
+      height: 30.25rem;
+      left: 0;
+      top: 56.6rem;
+    }
+    .star-3 {
+      width: 28.0625rem;
+      height: 21.9375rem;
+      right: 0;
+      top: 89.5rem;
+    }
+    .star-4 {
+      width: 27rem;
+      height: 21.9375rem;
+      top: 133.6rem;
+      left: 0;
+    }
+    .star-5 {
+      width: 20.5625rem;
+      height: 21.9375rem;
+      top: 166.6rem;
+      right: 0;
+    }
+    .star-6 {
+      width: 36.75rem;
+      height: 42.5625rem;
+      top: 191.7rem;
+      left: 0;
+    }
+    .star-7 {
+      width: 83.125rem;
+      height: 51.5625rem;
+      top: 249.4rem;
+      left: 5.4rem;
+    }
+    .star-8 {
+      width: 59.875rem;
+      height: 45.1875rem;
+      top: 315.5rem;
+      left: 29.7rem;
+    }
+    .star-9 {
+      width: 22.75rem;
+      height: 48.625rem;
+      top: 364.3rem;
+      left: 0;
+    }
+    .star-10 {
+      width: 22.625rem;
+      height: 48.5625rem;
+      top: 387.3rem;
+      right: 0;
+    }
+    .star-popup-1 {
+      width: 22.125rem;
+      height: 22.25rem;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__sky-mobile {
+    @media (min-width: 768px) {
+      display: none !important;
+    }
+    img {
+      position: absolute;
+    }
+    .sky-1 {
+      width: 19.5625rem;
+      height: 39.5625rem;
+      left: 0;
+      top: 58.7rem;
+    }
+    .sky-2 {
+      width: 18.3125rem;
+      height: 39.5625rem;
+      right: 0;
+      top: 92rem;
+    }
+    .sky-3 {
+      width: 19.25rem;
+      height: 39.5625rem;
+      right: 0;
+      top: 157rem;
+    }
+    .sky-4 {
+      width: 19.625rem;
+      height: 39.5625rem;
+      right: 0;
+      top: 245.5rem;
+    }
+    .sky-5 {
+      width: 22.1875rem;
+      height: 39.5625rem;
+      right: 0;
+      top: 308.3rem;
+    }
+    .sky-6 {
+      width: 21.0625rem;
+      height: 39.5625rem;
+      left: 0;
+      top: 337.5rem;
+    }
+
+    .sky-popup-1 {
+      width: 23.4375rem;
+      height: 57.0625rem;
+      right: 0;
+      top: 10rem;
+    }
+
+    .sky-menu-1{
+      width: 7.75rem;
+      height: 11.9375rem;
+      left: 0;
+      top: 0;
+    }
+    .sky-menu-2{
+      width: 20.3125rem;
+      height: 39.125rem;
+      right: 0;
+      top: 11.5rem;
+    }
+    
+  }
+  &__stars-mobile {
+    @media (min-width: 768px) {
+      display: none !important;
+    }
+    mix-blend-mode: color-dodge;
+    img {
+      position: absolute;
+    }
+
+    .star-1 {
+      width: 16.5rem;
+      height: 25.5rem;
+      top: 11.9rem;
+      left: 0;
+    }
+    .star-2 {
+      width: 16.5rem;
+      height: 25.5rem;
+      right: 0;
+      top: 49.2rem;
+    }
+    .star-3 {
+      width: 16.1875rem;
+      height: 25.5rem;
+      right: 0;
+      top: 132rem;
+    }
+    .star-4 {
+      width: 23.4375rem;
+      height: 25.5rem;
+      left: 0;
+      top: 165.2rem;
+    }
+    .star-5 {
+      width: 23.4375rem;
+      height: 41.625rem;
+      left: 0;
+      top: 213rem;
+    }
+    .star-6 {
+      width: 16.5rem;
+      height: 25.5rem;
+      left: 0;
+      top: 303.5rem;
+    }
+    .star-7 {
+      width: 17.25rem;
+      height: 25.5rem;
+      left: 0;
+      top: 380.5rem;
+    }
+
+    .star-popup-1 {
+      width: 12.5625rem;
+      height: 25.5rem;
+      left: 0;
+      top: 27.8rem;
+    }
+    .star-menu-1{
+      width: 16.25rem;
+      height: 25.5rem;
+      top: 10.5rem;
+      left: 0;
+    }
+  }
 }

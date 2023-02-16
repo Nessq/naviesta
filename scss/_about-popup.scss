@@ -44,6 +44,7 @@
   left: 0;
   right: 0;
   transition: left 0.25s ease-in-out;
+  will-change: left;
 }
 .popup-content.loading {
   left: -100%;
@@ -58,12 +59,13 @@
   align-items: center;
   img {
     width: 30.6875rem;
-    max-height: 80vh;
+    height: 46.625rem;
     object-fit: cover;
+
     // height: 46rem;
     // height: 46rem;
     // object-fit: cover;
-    // max-height: 80vh;
+    max-height: 82vh;
   }
 }
 

@@ -277,4 +277,28 @@ $(document).ready(function () {
   $cont.addEventListener('scroll', scrollerServices);
   scrollerServices($cont);
 
+  function toggleMenu(opening = true){
+    if(opening){
+      $('.burger').addClass('active');
+      $('body').addClass('menu-opened');
+    }else{
+      $('.burger').removeClass('active');
+      $('body').removeClass('menu-opened');
+    }
+    
+  }
+
+  $('.burger').on('click', function(e){
+    $btn = $(this);
+    if($btn.hasClass('active')){
+      toggleMenu(false);
+    }else{
+      toggleMenu(true);
+    }
+  });
+
+  $(document).on('click', '.menu-opened .header-nav .menu a', function(){
+    toggleMenu(false);
+  })
+
 });

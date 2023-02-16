@@ -99,20 +99,19 @@ $(document).ready(function () {
     $('input[name="preference"]:not(:checked)').click();
   });
 
-  const anchors = document.querySelectorAll('a[href*="#"]');
+  $('a[href*="#"]').on('click', function(e){
+    e.preventDefault();
+    const blockID = this.getAttribute('href').substr(1);
 
-  for (let anchor of anchors) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      const blockID = anchor.getAttribute('href').substr(1);
-
+    setTimeout(()=>{
       document.getElementById(blockID).scrollIntoView({
         behavior: 'smooth',
         block: 'start',
       });
-    });
-  }
+    }, 100);
+    
+  })
+
 
   function sendDataOnEmail(data) {
     var $btn = $('button[type="submit"]');

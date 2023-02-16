@@ -146,7 +146,7 @@
   }
 
   .subscribe h2 {
-    margin: 1.5625rem 0;
+    margin: 0;
     margin-bottom: 1.5625rem;
   }
   .form-group:first-child h3 {
@@ -184,8 +184,12 @@
 
   // benefit
   .benefits {
-    margin-top: 6.5625rem;
-    margin-bottom: 7.5rem;
+    margin-top: 1.5625rem;
+    margin-bottom: 2.5rem;
+    padding-top: 5rem;
+  }
+  .services{
+    padding-top: 5rem;
   }
   .benefits-item {
     display: flex;
@@ -307,7 +311,8 @@
   }
 
   .cases {
-    margin-top: 5rem;
+    padding-top: 5rem;
+    margin-top: 0;
   }
   .cases-desc {
     flex-direction: column;
@@ -375,8 +380,12 @@
 
   .about {
     height: auto;
-    margin-top: 5rem;
-    margin-bottom: 4.375rem;
+    padding-top: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .subscribe{
+    padding-top: 4.375rem;
   }
   .about-text {
     position: relative;

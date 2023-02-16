@@ -256,4 +256,25 @@ $(document).ready(function () {
       currentPopup = null;
     }
   });
+
+  $scroller = document.querySelector('.cont-scroller .cont-scroller__diff')
+  let allWidth = $cont.scrollWidth;
+
+  function scrollerServices(e){
+        let $cn = e.target;
+        if($cn === undefined) {
+          $cn = $cont;
+        }
+        
+        let left = $cn.scrollLeft;
+        let percent =  (left / allWidth) * 100;
+        console.log(percent);
+    
+        $scroller.style.width = (($cn.offsetWidth / allWidth) * 100) + '%';
+        $scroller.style.left = percent + '%';
+  }
+
+  $cont.addEventListener('scroll', scrollerServices);
+  scrollerServices($cont);
+
 });

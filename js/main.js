@@ -268,7 +268,7 @@ $(document).ready(function () {
         
         let left = $cn.scrollLeft;
         let percent =  (left / allWidth) * 100;
-        console.log(percent);
+
     
         $scroller.style.width = (($cn.offsetWidth / allWidth) * 100) + '%';
         $scroller.style.left = percent + '%';

@@ -494,9 +494,17 @@
   .footer-socials {
     margin-top: 2.5rem;
   }
+
+  .popup__bg{
+    overflow: initial;
+    
+  }
   .popup {
     padding-top: 0;
     padding-bottom: 2.1875rem;
+    overflow: auto;
+    max-height: 100vh;
+    align-items: flex-start;
   }
   .popup-content {
     flex-direction: column;

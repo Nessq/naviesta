@@ -8,14 +8,13 @@
   background: $bg-popup;
   opacity: 0;
   pointer-events: none;
-  transition: 0.5s all;
-  overflow: auto;
+  transition: opacity 0.5s all;
 }
 
 .popup__bg.active {
   opacity: 1;
   pointer-events: all;
-  transition: 0.5s all;
+  transition: transform 0.5s all;
 }
 
 .popup {
@@ -26,9 +25,10 @@
   padding: 4.7rem 0;
   transition: 0.5s all;
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .popup.active {
@@ -43,7 +43,7 @@
   position: relative;
   left: 0;
   right: 0;
-  transition: left 0.25s ease-in-out;
+  transition: left 0.25s linear;
   will-change: left;
 }
 .popup-content.loading {

@@ -197,6 +197,9 @@ $(document).ready(function () {
       setTimeout(() => {
         popContent.classList.remove('loading');
         popContent.classList.add('preloading');
+        $(popup).animate({
+          scrollTop: 0,
+        }, 100)
       }, 250);
       setTimeout(() => {
         popImg.setAttribute('src', content.img);
@@ -224,6 +227,14 @@ $(document).ready(function () {
       }
     }
 
+  }
+
+  let bgPopup = document.querySelector('.bgs--overflow');
+  if(window.innerWidth <= 767){
+    popup.addEventListener('scroll', function(e){
+      const diff = e.target.scrollTop;
+      bgPopup.style.marginTop = '-' + Math.ceil(diff) + 'px';
+    });
   }
 
   openPopupButtons.forEach((button) => {

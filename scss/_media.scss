@@ -69,7 +69,7 @@
       bottom: 0;
       position: fixed;
       background: linear-gradient(180deg, #123053 0%, #0D2748 100%);
-      overflow-y: auto;
+      // overflow-y: auto;
     }
     .header-nav {
       display: block;
@@ -77,6 +77,8 @@
       margin-top: 2.8125rem;
       width: 100%;
       padding: 0 1.25rem;
+      overflow: auto;
+      height: calc(100vh - 2.815rem);
       .menu {
         flex-direction: column;
         padding: 4.0625rem 0 5.125rem;
@@ -532,6 +534,10 @@
     > span {
       font-size: 1rem;
     }
+  }
+
+  .cases-earth-dots__item{
+    mix-blend-mode: screen;
   }
 
 }
